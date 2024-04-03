@@ -1,7 +1,3 @@
-Sure, here's the updated README file with the additional step for setting up a virtual environment:
-
----
-
 # Cat Fact Project
 
 ## Description
