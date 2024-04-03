@@ -1,4 +1,4 @@
-# Cat Fact Project
+# Cat Fact Project - Omair Ansari
 
 ## Description
 The Cat Fact Project is a Django application that provides endpoints to fetch and display cat facts. It includes functionality to fetch cat facts from an external API asynchronously and retrieve the last fetched fact.
