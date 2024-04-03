@@ -45,6 +45,7 @@ The Cat Fact Project is a Django application that provides endpoints to fetch an
 3. Access the application in your web browser at `http://127.0.0.1:8000/`.
 
 ## Endpoints
-- `/health_check`: Returns status code 200 when the application is running.
-- `/fetch_fact`: Queues an async task to fetch data from an external cat fact API.
-- `/get_fact`: Returns the first cat fact fetched from the `/fetch_fact` endpoint. If no task has been queued yet, it returns an appropriate error message.
+Click on the url to check the endpoints hosted on [pythonanywhere.com](https://www.pythonanywhere.com/)
+- `/health_check`: Returns status code 200 when the application is running.  [URL](https://oansari22.pythonanywhere.com/health_check/)
+- `/fetch_fact`: Queues an async task to fetch data from an external cat fact API. [URL](https://oansari22.pythonanywhere.com/fetch_fact/)
+- `/get_fact`: Returns the first cat fact fetched from the `/fetch_fact` endpoint. If no task has been queued yet, it returns an appropriate error message. [URL](https://oansari22.pythonanywhere.com/get_fact/)
