@@ -1,6 +1,5 @@
 from django.http import JsonResponse
 import aiohttp
-import asyncio
 from django.views.decorators.csrf import csrf_exempt
 
 last_fact = None
