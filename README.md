@@ -41,8 +41,12 @@ The Cat Fact Project is a Django application that provides endpoints to fetch an
    ```
    python manage.py runserver
    ```
+3. **Start the Dramatiq worker**:
+   ```
+   python manage.py rundramatiq
+   ```
 
-3. Access the application in your web browser at `http://127.0.0.1:8000/`.
+4. Access the application in your web browser at `http://127.0.0.1:8000/`.
 
 ## Endpoints
 Click on the url to check the endpoints hosted on [pythonanywhere.com](https://www.pythonanywhere.com/)
