@@ -1,5 +1,6 @@
 from django.http import JsonResponse
 import aiohttp
+import asyncio
 from django.views.decorators.csrf import csrf_exempt
 
 last_fact = None
@@ -22,13 +23,8 @@ async def fetch_data():
 async def fetch_fact(request):
     global last_fact
     try:
-        # Fetch data asynchronously
-        data = await fetch_data()
-        if data:
-            last_fact = data[0]['text']
-            return JsonResponse({'success': True})
-        else:
-            return JsonResponse({'success': False, 'error': 'No facts found'}, status=404)
+        asyncio.create_task(fetch_data())  # fetch_fact endpoint wont wait for the endpoint now
+        return JsonResponse({'success': True})
     except Exception as e:
         return JsonResponse({'success': False, 'error': str(e)}, status=500)
 
